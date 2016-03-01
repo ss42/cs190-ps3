@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +18,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaels_logo_944_625" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-kZ-88v">
+                                <rect key="frame" x="44" y="167" width="512" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="512" id="ZCs-38-Ypo"/>
+                                    <constraint firstAttribute="width" secondItem="J8h-kZ-88v" secondAttribute="height" multiplier="944:625" constant="40.899200000000008" id="jaD-4h-kHQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZCs-38-Ypo"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="0jq-Zb-IWG"/>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="-88" id="2TI-4c-xQb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="J8h-kZ-88v" secondAttribute="bottom" constant="121" id="IDS-wb-rkP"/>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="23" id="IlI-GK-EJO"/>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JLQ-Ue-OGu"/>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" constant="-88" id="emQ-fL-1jN"/>
+                            <constraint firstItem="J8h-kZ-88v" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="147" id="mig-5O-VKS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J8h-kZ-88v" secondAttribute="trailing" constant="24" id="x18-aL-LxC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0jq-Zb-IWG"/>
+                                <exclude reference="emQ-fL-1jN"/>
+                                <exclude reference="mig-5O-VKS"/>
+                                <exclude reference="x18-aL-LxC"/>
+                                <exclude reference="IDS-wb-rkP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +59,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gaels_logo_944_625" width="472" height="312"/>
+    </resources>
 </document>
